@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malak | Frontend Developer</title>
+    <link rel="shortcut icon" href="images/circle_logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="particles"></div>
+
+    <!-- start navbar -->
+    <nav class="navbar-custom">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="images/circle_logo.png" alt="Malak Logo">
+                <span data-en="Malak" data-ar="مَـــلـــــღـــــك">Malak</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
+                <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+            </ul>
+            <div class="controls">
+                <button id="langBtn">AR</button>
+                <button id="themeBtn">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+            <a href="#contact" class="contact-btn" data-en="Let's Work" data-ar="لنعمل معًا">
+                Let's Work
+            </a>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start header -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hello" data-en="SOFTWARE ENGINEER" data-ar="مهندسة برمجيات">
+                    SOFTWARE ENGINEER
+                </span>
+                <h1 data-en="Malak Hany" data-ar="مَـــلــــღـــــك هَـــانـــي">
+                    Malak Hany
+                </h1>
+                <h2 data-en="Frontend Developer" data-ar="مطورة واجهات أمامية">
+                    Frontend Developer
+                </h2>
+                <p class="slogan" data-en="✦ Built with Intention. Crafted to Last. ✦"
+                    data-ar="✦ مبني بعناية، مصمم ليدوم ✦">
+                    ✦ Built with Intention. Crafted to Last. ✦
+                </p>
+                <p class="desc"
+                    data-en="I build responsive, modern and user-friendly websites with clean code, smooth animations and memorable user experiences."
+                    data-ar="أقوم ببناء مواقع حديثة ومتجاوبة وسهلة الاستخدام باستخدام كود نظيف وحركات سلسة وتجارب مستخدم مميزة.">
+                    I build responsive, modern and user-friendly websites with clean code, smooth animations and
+                    memorable user experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary" data-en="View Projects" data-ar="عرض المشاريع">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn-outline" data-en="Hire Me" data-ar="وظفني">
+                        Hire Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-glow"></div>
+                <div class="logo-circle">
+                    <img src="images/me.png" alt="Malak">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start about -->
+    <section id="about" dir="rtl">
+        <div class="container">
+            <div class="section-box">
+                <div class="about-image">
+                    <img src="images/prof.png" alt="Malak">
+                </div>
+                <div class="about-content">
+                    <span class="section-title" data-en="About Me" data-ar="عني">
+                        عني
+                    </span>
+                    <h2 data-en="Creating Digital Experiences That Matter" data-ar="إنشاء تجارب رقمية لها تأثير">
+                        إنشاء تجارب رقمية لها تأثير
+                    </h2>
+                    <p data-en="I'm Malak Hany, a Frontend Developer passionate about crafting modern, responsive, and user-focused web applications. I enjoy turning creative ideas into elegant interfaces with clean, maintainable code."
+                        data-ar="أنا ملك هاني، مطورة واجهات أمامية شغوفة ببناء تطبيقات ويب حديثة ومتجاوبة تركز على المستخدم. أستمتع بتحويل الأفكار الإبداعية إلى واجهات أنيقة باستخدام كود نظيف وسهل الصيانة.">
+                        أنا ملك هاني، مطورة واجهات أمامية شغوفة ببناء تطبيقات ويب حديثة ومتجاوبة تركز على المستخدم.
+                        أستمتع بتحويل الأفكار الإبداعية إلى واجهات أنيقة باستخدام كود نظيف وسهل الصيانة.
+                    </p>
+
+                    <div class="about-info">
+                        <div>
+                            <h4 data-en="Name" data-ar="الاسم">الاسم</h4>
+                            <span>Malak Hany</span>
+                        </div>
+
+                        <div>
+                            <h4 data-en="Email" data-ar="البريد الإلكتروني">
+                                البريد الإلكتروني
+                            </h4>
+                            <span>malakhany1422006@gmail.com</span>
+                        </div>
+
+                        <div>
+                            <h4 data-en="Location" data-ar="الموقع">
+                                الموقع
+                            </h4>
+                            <span data-en="Egypt" data-ar="مصر">مصر</span>
+                        </div>
+
+                        <div>
+                            <h4 data-en="Experience" data-ar="الخبرة">
+                                الخبرة
+                            </h4>
+                            <span data-en="Frontend Developer" data-ar="مطورة واجهات أمامية">
+                                مطورة واجهات أمامية
+                            </span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" data-en="Let's Work Together" data-ar="لنعمل معًا">
+                        لنعمل معًا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start skills -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <span data-en="My Skills" data-ar="مهاراتي">My Skills</span>
+                <h2 data-en="Tech Stack & Tools" data-ar="التقنيات والأدوات">
+                    Tech Stack & Tools
+                </h2>
+                <p data-en="Technologies, tools and programming languages I use throughout my learning journey and projects."
+                    data-ar="التقنيات والأدوات ولغات البرمجة التي أستخدمها خلال رحلة التعلم والمشاريع الخاصة بي.">
+                    Technologies, tools and programming languages I use throughout my learning journey and projects.
+                </p>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>💻 <span data-en="Tech Stack" data-ar="تقنيات الويب">Tech Stack</span></h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-html5 html"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-css3-alt css"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-js js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/Typescript.svg" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-bootstrap bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎨 <span data-en="Design" data-ar="التصميم">Design</span></h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-figma figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-mobile-screen responsive"></i>
+                            <span data-en="Responsive Design" data-ar="تصميم متجاوب">Responsive Design</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-pencil-ruler ui-design"></i>
+                            <span>UI Design</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-object-group wireframe"></i>
+                            <span>Wireframing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🛠️ <span data-en="Tools" data-ar="الأدوات">Tools</span></h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-git-alt git"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-github github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-code vscode"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-paper-plane postman"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-npm npm"></i>
+                            <span>npm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>💻 <span data-en="Programming Languages" data-ar="لغات البرمجة">Programming Languages</span>
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-python python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/cpp.png" alt="C++">
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-java java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/Rlogo.png" alt="R">
+                            <span>R</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🗄️ <span data-en="Database" data-ar="قواعد البيانات">Database</span></h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="images/sql.png" alt="SQL">
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-database mysql"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-code json"></i>
+                            <span>JSON</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-cloud-arrow-down api"></i>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🚀 <span data-en="Frontend & Frameworks" data-ar="الواجهات والأطر">Frontend & Frameworks</span>
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-react react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-node-js node"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/nestjs.png" alt="NestJS">
+                            <span>NestJS</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/jq.png" alt="jQuery">
+                            <span>jQuery</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="images/dom.png" alt="DOM">
+                            <span>DOM Manipulation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills -->
+
+    <!-- start soft skills -->
+    <section id="soft-skills">
+        <div class="container">
+            <div class="section-heading">
+                <span data-en="Professional Skills" data-ar="المهارات الشخصية">Professional Skills</span>
+                <h2 data-en="Core Strengths" data-ar="نقاط القوة">
+                    Core Strengths
+                </h2>
+                <p data-en="The personal and professional skills that help me collaborate, communicate effectively, solve problems and deliver quality work."
+                    data-ar="المهارات الشخصية والمهنية التي تساعدني على التعاون والتواصل وحل المشكلات وتقديم عمل بجودة عالية.">
+                    The personal and professional skills that help me collaborate, communicate effectively, solve
+                    problems and deliver quality work.
+                </p>
+            </div>
+            <div class="soft-skills-grid">
+                <div class="soft-skill">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-comments"></i>
+                    <span data-en="Communication" data-ar="التواصل">Communication</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-users"></i>
+                    <span data-en="Teamwork" data-ar="العمل الجماعي">Teamwork</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-clock"></i>
+                    <span data-en="Time Management" data-ar="إدارة الوقت">Time Management</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span data-en="Attention to Detail" data-ar="الاهتمام بالتفاصيل">Attention to Detail</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span data-en="Continuous Learning" data-ar="التعلم المستمر">Continuous Learning</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span data-en="Critical Thinking" data-ar="التفكير النقدي">Critical Thinking</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span data-en="Fast Learner" data-ar="سرعة التعلم">Fast Learner</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span data-en="Adaptability" data-ar="القدرة على التكيف">Adaptability</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-palette"></i>
+                    <span data-en="Design Thinking" data-ar="التفكير التصميمي">Design Thinking</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-universal-access"></i>
+                    <span data-en="Accessibility Mindset" data-ar="مراعاة سهولة الوصول">Accessibility Mindset</span>
+                </div>
+                <div class="soft-skill">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span data-en="Creativity" data-ar="الإبداع">Creativity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end soft skills -->
+
+    <!-- start projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-heading">
+                <span data-en="Portfolio" data-ar="معرض الأعمال">Portfolio</span>
+                <h2 data-en="Featured Projects" data-ar="أبرز المشاريع">Featured Projects</h2>
+                <p data-en="A selection of projects showcasing my skills in frontend development, responsive design, APIs and modern web technologies."
+                    data-ar="مجموعة من المشاريع التي تعرض مهاراتي في تطوير الواجهات الأمامية والتصميم المتجاوب وواجهات البرمجة والتقنيات الحديثة.">
+                    A selection of projects showcasing my skills in frontend development, responsive design, APIs and
+                    modern web technologies.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- Portfolio -->
+                <div class="project-card featured-project">
+                    <img src="images/proj/port.png" alt="Personal Portfolio">
+                    <div class="project-content">
+                        <h3 data-en="Personal Portfolio" data-ar="الموقع الشخصي">Personal Portfolio</h3>
+                        <p data-en="Modern animated portfolio showcasing my skills, projects, and experience with responsive design, smooth interactions, and clean user interface."
+                            data-ar="موقع شخصي متحرك يعرض مهاراتي ومشاريعي وخبراتي بتصميم متجاوب وتفاعلات سلسة وواجهة مستخدم نظيفة.">
+                            Modern animated portfolio showcasing my skills, projects, and experience with responsive
+                            design, smooth interactions, and clean user interface.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>GSAP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Food -->
+                <div class="project-card">
+                    <img src="images/proj/food.png" alt="Food Website">
+                    <div class="project-content">
+                        <h3 data-en="Food Recipes" data-ar="وصفات الطعام">Food Recipes</h3>
+                        <p data-en="Modern responsive restaurant website with elegant UI and smooth user experience."
+                            data-ar="موقع مطعم حديث ومتجاوب بتصميم أنيق وتجربة مستخدم سلسة.">
+                            Modern responsive restaurant website with elegant UI and smooth user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://malakhany-max.github.io/Food/" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="https://github.com/malakhany-max/Food" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Weather -->
+                <div class="project-card">
+                    <img src="images/proj/weather.png" alt="Weather App">
+                    <div class="project-content">
+                        <h3 data-en="Weather App" data-ar="تطبيق الطقس">Weather App</h3>
+                        <p data-en="Real-time weather application using Weather API with dynamic backgrounds based on weather conditions."
+                            data-ar="تطبيق طقس يعرض البيانات بشكل لحظي باستخدام Weather API مع خلفيات متغيرة حسب حالة الطقس.">
+                            Real-time weather application using Weather API with dynamic backgrounds based on weather
+                            conditions.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://malakhany-max.github.io/Weather/" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="https://github.com/malakhany-max/Weather" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game -->
+                <div class="project-card">
+                    <img src="images/proj/game.png" alt="GamePulse">
+                    <div class="project-content">
+                        <h3 data-en="GamePulse" data-ar="GamePulse">GamePulse</h3>
+                        <p data-en="Interactive gaming platform displaying games fetched from FreeToGame API with filtering and details."
+                            data-ar="منصة ألعاب تفاعلية تعرض الألعاب من خلال FreeToGame API مع التصفية وعرض التفاصيل.">
+                            Interactive gaming platform displaying games fetched from FreeToGame API with filtering and
+                            details.
+                        </p>
+                        <div class="project-tech">
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://malakhany-max.github.io/Game-Review/" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="https://github.com/malakhany-max/Game-Review" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CRUD -->
+                <div class="project-card">
+                    <img src="images/proj/crud.png" alt="CRUD System">
+                    <div class="project-content">
+                        <h3 data-en="CRUD System" data-ar="نظام إدارة المنتجات">CRUD System</h3>
+                        <p data-en="Product management system with create, read, update, delete, search, and local storage functionality."
+                            data-ar="نظام لإدارة المنتجات يدعم الإضافة والعرض والتعديل والحذف والبحث باستخدام Local Storage.">
+                            Product management system with create, read, update, delete, search, and local storage
+                            functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://malakhany-max.github.io/CRUD/" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="https://github.com/malakhany-max/CRUD" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bakery -->
+                <div class="project-card">
+                    <img src="images/proj/bakery.png" alt="Bakery Website">
+                    <div class="project-content">
+                        <h3 data-en="Bakery" data-ar="موقع المخبوزات">Bakery</h3>
+                        <p data-en="Responsive bakery website featuring modern UI, smooth navigation, and elegant product presentation."
+                            data-ar="موقع مخبوزات متجاوب بتصميم عصري وتنقل سلس وعرض أنيق للمنتجات.">
+                            Responsive bakery website featuring modern UI, smooth navigation, and elegant product
+                            presentation.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://malakhany-max.github.io/Bakery/" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="https://github.com/malakhany-max/Bakery" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fokir -->
+                <div class="project-card">
+                    <img src="images/proj/fokir.png" alt="Fokir Portfolio">
+                    <div class="project-content">
+                        <h3 data-en="Fokir Portfolio" data-ar="موقع Fokir الشخصي">Fokir Portfolio</h3>
+                        <p data-en="Personal portfolio website with a clean layout, responsive design, and smooth user experience."
+                            data-ar="موقع شخصي بتصميم منظم ومتجاوب مع تجربة مستخدم سلسة.">
+                            Personal portfolio website with a clean layout, responsive design, and smooth user
+                            experience.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://malakhany-max.github.io/Fokir/" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="https://github.com/malakhany-max/Fokir" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pinkissed -->
+                <div class="project-card featured-project">
+                    <img src="images/proj/pinkissed.png" alt="Pinkissed Store">
+                    <div class="project-content">
+                        <h3 data-en="Pinkissed Store" data-ar="متجر Pinkissed">Pinkissed Store</h3>
+                        <p data-en="Full-stack e-commerce website for handmade pins with authentication, shopping cart and cash on delivery."
+                            data-ar="متجر إلكتروني متكامل للمنتجات اليدوية يحتوي على تسجيل دخول وسلة مشتريات وخدمة الدفع عند الاستلام.">
+                            Full-stack e-commerce website for handmade pins with authentication, shopping cart and cash
+                            on delivery.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://malakhany-max.github.io/Pinkissed/" target="_blank" class="live-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-en="Live Preview" data-ar="عرض الموقع">Live Preview</span>
+                            </a>
+                            <a href="https://github.com/malakhany-max/Pinkissed" target="_blank" class="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end projects -->
+
+    <!-- start services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-heading">
+                <span data-en="My Services" data-ar="خدماتي">
+                    My Services
+                </span>
+                <h2 data-en="What I Can Build" data-ar="ما يمكنني تنفيذه">
+                    What I Can Build
+                </h2>
+                <p data-en="From responsive websites to interactive web applications, I build modern digital experiences focused on performance, usability and clean code."
+                    data-ar="من المواقع المتجاوبة إلى تطبيقات الويب التفاعلية، أقوم ببناء تجارب رقمية حديثة تركز على الأداء وسهولة الاستخدام والكود النظيف.">
+                    From responsive websites to interactive web applications, I build modern digital
+                    experiences focused
+                    on performance, usability and clean code.
+                </p>
+            </div>
+            <div class="services-wrapper">
+                <div class="services-lines"></div>
+                <div class="services-center">
+                    <div class="center-circle">
+                        <img src="images/circle_logo.png" alt="Malak Logo">
+                    </div>
+                </div>
+                <div class="service service1">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4 data-en="Business Websites" data-ar="مواقع الشركات">
+                        Business Websites
+                    </h4>
+                </div>
+                <div class="service service2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h4 data-en="E-commerce Stores" data-ar="المتاجر الإلكترونية">
+                        E-commerce Stores
+                    </h4>
+                </div>
+                <div class="service service3">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4 data-en="Dashboards" data-ar="لوحات التحكم">
+                        Dashboards
+                    </h4>
+                </div>
+                <div class="service service4">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h4 data-en="Responsive Websites" data-ar="مواقع متجاوبة">
+                        Responsive Websites
+                    </h4>
+                </div>
+                <div class="service service5">
+                    <i class="fa-brands fa-react"></i>
+                    <h4 data-en="React Applications" data-ar="تطبيقات React">
+                        React Applications
+                    </h4>
+                </div>
+                <div class="service service6">
+                    <i class="fa-brands fa-figma"></i>
+                    <h4 data-en="Figma to Code" data-ar="تحويل التصميم إلى كود">
+                        Figma to Code
+                    </h4>
+                </div>
+                <div class="service service7">
+                    <i class="fa-solid fa-plug"></i>
+                    <h4 data-en="API Integration" data-ar="ربط واجهات البرمجة">
+                        API Integration
+                    </h4>
+                </div>
+                <div class="service service8">
+                    <i class="fa-solid fa-user"></i>
+                    <h4 data-en="Portfolio Websites" data-ar="المواقع الشخصية">
+                        Portfolio Websites
+                    </h4>
+                </div>
+                <div class="service service9">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h4 data-en="Landing Pages" data-ar="الصفحات التعريفية">
+                        Landing Pages
+                    </h4>
+                </div>
+                <div class="service service10">
+                    <i class="fa-solid fa-code"></i>
+                    <h4 data-en="Interactive Web Apps" data-ar="تطبيقات ويب تفاعلية">
+                        Interactive Web Apps
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services -->
+
+    <!-- start contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <span data-en="Contact Me" data-ar="تواصل معي">
+                    Contact Me
+                </span>
+                <h2 data-en="Let's Build Something Together" data-ar="لنبنِ شيئًا معًا">
+                    Let's Build Something Together
+                </h2>
+                <p data-en="Have a project idea or want to collaborate? I'd love to hear from you."
+                    data-ar="هل لديك فكرة مشروع أو ترغب في التعاون؟ يسعدني التواصل معك.">
+                    Have a project idea or want to collaborate? I'd love to hear from you.
+                </p>
+            </div>
+            <div class="contact-links">
+
+                <!-- Email -->
+                <a href="mailto:malakhany1422006@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <span>malakhany1422006@gmail.com</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/malakhany-max" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>GitHub</h3>
+                        <span>malakhany-max</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/malak-hany-224m9706" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>LinkedIn</h3>
+                        <span>malak-hany-224m9706</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/circle_logo.png" alt="Malak Logo">
+                    <span>Malak</span>
+                </div>
+                <p data-en="© 2026 Malak Hany. All Rights Reserved." data-ar="© 2026 ملك هاني. جميع الحقوق محفوظة.">
+                    © 2026 Malak Hany. All Rights Reserved.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/malakhany-max" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/malak-hany-224m9706" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
