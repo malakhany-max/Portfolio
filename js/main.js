@@ -5,6 +5,8 @@ const projectCards = document.querySelectorAll(".project-card");
 const themeBtn = document.getElementById("themeBtn");
 const langBtn = document.getElementById("langBtn");
 let currentLang = localStorage.getItem("lang") || "en";
+const contactFormAnimation = document.querySelector(".contact-form");
+const contactImageAnimation = document.querySelector(".contact-image");
 
 heroImage.addEventListener("mousemove", (e) => {
     const rect = heroImage.getBoundingClientRect();
@@ -104,3 +106,89 @@ if(localStorage.getItem("theme") === "light"){
     themeBtn.innerHTML='<i class="fa-solid fa-moon"></i>';
 }
 changeLanguage();
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:".contact-section",
+        start:"top 70%",
+        toggleActions:"play none none none"
+    }
+});
+tl.from(".contact-form",{
+    x:-500,
+    opacity:0,
+    scale:.8,
+    filter:"blur(20px)",
+    duration:1.7,
+    ease:"expo.out"
+},0);
+tl.from(".crystal",{
+    x:1000,
+    y:-250,
+    rotation:720,
+    scale:0.1,
+    opacity:0,
+    duration:2.2,
+    ease:"expo.out"
+},0);
+tl.add(() => {
+
+    gsap.to(".crystal",{
+        rotation:"+=360",
+        duration:10,
+        repeat:-1,
+        ease:"none"
+    });
+
+    gsap.to(".crystal",{
+        y:"-=20",
+        duration:2.5,
+        repeat:-1,
+        yoyo:true,
+        ease:"sine.inOut"
+    });
+});
+
+window.addEventListener("scroll",()=>{
+    const sectionTop = contactFormAnimation.getBoundingClientRect().top;
+    if(sectionTop < window.innerHeight - 150){
+        contactFormAnimation.classList.add("show");
+        contactImageAnimation.classList.add("show");
+    }
+});
+emailjs.init({
+    publicKey: "FFZkFgplZRSyE-xDZ",
+});
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_8xg8n78", "template_wl4yh47", this)
+        .then(() => {
+            alert("Message sent successfully!");
+            this.reset();
+        })
+        .catch((error) => {
+            console.log("EmailJS error:", error);
+            alert("Failed to send message.");
+        });
+});
+emailjs.sendForm("service_8xg8n78", "template_wl4yh47", this)
+.then(() => {
+    if(currentLang === "en"){
+        alert("Your message has been sent successfully! ✅");
+    } else {
+        alert("تم إرسال رسالتك بنجاح! ✅");
+    }
+    this.reset();
+})
+.catch((error) => {
+    console.log("EmailJS error:", error);
+
+    if(currentLang === "en"){
+        alert("Failed to send your message ❌");
+    } else {
+        alert("فشل إرسال رسالتك ❌");
+    }
+});
