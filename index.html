@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malak | Frontend Developer</title>
+    <title>Malak Hany | Frontend Developer & React Developer</title>
+    <meta name="description"
+        content="Portfolio of Malak Hany, Frontend Developer specializing in React, JavaScript, responsive web design, and modern user experiences.">
+    <meta name="keywords"
+        content="Malak Hany, Frontend Developer, React Developer, JavaScript, HTML, CSS, Bootstrap, Portfolio">
+    <meta name="author" content="Malak Hany">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8d4cff">
     <link rel="shortcut icon" href="images/circle_logo.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,6 +25,11 @@
 
 <body>
     <div id="particles"></div>
+
+    <!-- alert -->
+    <div class="alert-box" id="alertBox">
+        <p id="alertMessage"></p>
+    </div>
 
     <!-- start navbar -->
     <nav class="navbar-custom">
@@ -38,6 +50,9 @@
                 <button id="langBtn">AR</button>
                 <button id="themeBtn">
                     <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="menuBtn" class="menu-btn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
             <a href="#contact" class="contact-btn" data-en="Let's Work" data-ar="لنعمل معًا">
@@ -76,6 +91,11 @@
                     </a>
                     <a href="#contact" class="btn-outline" data-en="Hire Me" data-ar="وظفني">
                         Hire Me
+                    </a>
+                    <a href="images/Malak_Hany.pdf" download class="btn-cv" data-en="Download CV"
+                        data-ar="تحميل الـ CV">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        Download CV
                     </a>
                 </div>
             </div>
@@ -701,29 +721,37 @@
         <div class="contact-section">
             <form id="contactForm" class="contact-form">
                 <div class="form-title">
-                    <h3>Send Me A Message</h3>
-                    <p>Have a project idea? Let's create something amazing together.</p>
+                    <h3 data-en="Send Me A Message" data-ar="أرسل لي رسالة">
+                        Send Me A Message
+                    </h3>
+                    <p data-en="Have a project idea? Let's create something amazing together."
+                        data-ar="لديك فكرة مشروع؟ لنصنع شيئًا مميزًا معًا.">
+                        Have a project idea? Let's create something amazing together.
+                    </p>
                 </div>
                 <div class="input-group">
                     <div class="input-box">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" required data-en-placeholder="Your Name"
+                            data-ar-placeholder="الاسم">
                     </div>
                     <div class="input-box">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" required data-en-placeholder="Your Email"
+                            data-ar-placeholder="البريد الإلكتروني">
                     </div>
                 </div>
                 <div class="input-box">
                     <i class="fa-solid fa-heading"></i>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <input type="text" id="subject" name="subject" required data-en-placeholder="Subject"
+                        data-ar-placeholder="الموضوع">
                 </div>
                 <div class="input-box textarea">
                     <i class="fa-solid fa-message"></i>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message..."
-                        required></textarea>
+                    <textarea id="message" name="message" rows="5" required data-en-placeholder="Write your message..."
+                        data-ar-placeholder="اكتب رسالتك هنا..."></textarea>
                 </div>
-                <button type="submit">
+                <button type="submit" data-en="Send Message" data-ar="إرسال الرسالة">
                     Send Message
                     <i class="fa-solid fa-paper-plane"></i>
                 </button>
@@ -799,19 +827,13 @@
 
     <!-- start footer -->
     <footer class="footer">
-        <p data-en="© 2026 Malak. All rights reserved." data-ar="© 2026 ملك. جميع الحقوق محفوظة.">
+        <p data-en="© 2026 Malak. All rights reserved." data-ar="© 2026 مَـــلـــــღـــــك. جميع الحقوق محفوظة.">
             © 2026 Malak. All rights reserved.
         </p>
     </footer>
     <!-- end footer -->
 
-    <!-- alert -->
-    <div class="alert-box" id="alertBox">
-        <p id="alertMessage"></p>
-    </div>
-
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>

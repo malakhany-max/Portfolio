@@ -5,8 +5,6 @@ const projectCards = document.querySelectorAll(".project-card");
 const themeBtn = document.getElementById("themeBtn");
 const langBtn = document.getElementById("langBtn");
 let currentLang = localStorage.getItem("lang") || "en";
-const contactFormAnimation = document.querySelector(".contact-form");
-const contactImageAnimation = document.querySelector(".contact-image");
 
 heroImage.addEventListener("mousemove", (e) => {
     const rect = heroImage.getBoundingClientRect();
@@ -84,12 +82,16 @@ if (localStorage.getItem("theme") === "light") {
 
 function changeLanguage() {
     document.querySelectorAll("[data-en]").forEach(element => {
-        if (currentLang === "en") {
-            element.textContent = element.dataset.en;
-        }
-        else {
-            element.textContent = element.dataset.ar;
-        }
+        element.textContent =
+            currentLang === "en"
+                ? element.dataset.en
+                : element.dataset.ar;
+    });
+    document.querySelectorAll("[data-en-placeholder]").forEach(input => {
+        input.placeholder =
+            currentLang === "en"
+                ? input.dataset.enPlaceholder
+                : input.dataset.arPlaceholder;
     });
     document.body.dir = currentLang === "ar" ? "rtl" : "ltr";
     langBtn.textContent = currentLang === "en" ? "عربي" : "English";
@@ -100,12 +102,18 @@ langBtn.addEventListener("click", () => {
     localStorage.setItem("lang", currentLang);
     changeLanguage();
 });
-
-if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light");
-    themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-}
 changeLanguage();
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.querySelector(".nav-links");
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+});
+navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+    });
+});
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({
@@ -148,14 +156,6 @@ tl.add(() => {
         yoyo: true,
         ease: "sine.inOut"
     });
-});
-
-window.addEventListener("scroll", () => {
-    const sectionTop = contactFormAnimation.getBoundingClientRect().top;
-    if (sectionTop < window.innerHeight - 150) {
-        contactFormAnimation.classList.add("show");
-        contactImageAnimation.classList.add("show");
-    }
 });
 emailjs.init({
     publicKey: "FFZkFgplZRSyE-xDZ",
