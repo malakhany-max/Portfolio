@@ -1239,7 +1239,6 @@ span{
     z-index:1;
     position:relative;
 }
-
 .crystal{
     position:relative;
     width:100%;
@@ -1252,33 +1251,27 @@ span{
     drop-shadow(0 0 150px #C084FC);
     will-change:transform;
 }
-
 .form-title{
     text-align:center;
     margin-bottom:35px;
 }
-
 .form-title h3{
     font-family:"Cormorant Garamond",serif;
     font-size:40px;
     margin-bottom:10px;
 }
-
 .form-title p{
     color:var(--muted);
 }
-
 .input-group{
     display:flex;
     gap:20px;
 }
-
 .input-box{
     position:relative;
     width:100%;
     margin-bottom:20px;
 }
-
 .input-box i{
     position:absolute;
     left:20px;
