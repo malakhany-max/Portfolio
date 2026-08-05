@@ -1596,15 +1596,17 @@ transform:scale(.95);
     height:640px;
 }
 .service{
-    width:150px;
+    width:120px;
 }
 .service i{
-    width:60px;
-    height:60px;
-    font-size:26px;
+    width:48px;
+    height:48px;
+    font-size:20px;
 }
 .service h4{
-    font-size:18px;
+    font-size:14px;
+    white-space:normal;
+    line-height:1.2;
 }
 .center-circle{
     width:200px;
