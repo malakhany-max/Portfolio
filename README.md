@@ -41,12 +41,7 @@ https://malakhany-max.github.io/Portfolio/
 ---
 
 ## 📸 Preview
-
-> Add a screenshot of your portfolio inside the **images** folder and name it **preview.png**.
-
-```md
-![Portfolio Preview](images/preview.png)
-```
+<img width="1907" height="914" alt="port" src="https://github.com/user-attachments/assets/665b56d6-4875-4f21-95d0-f2d8748ef9fa" />
 
 ---
 
