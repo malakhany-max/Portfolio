@@ -1220,8 +1220,8 @@ span{
 }
 
 .contact-form{
-    flex:0 0 620px;
-    width:620px;
+    flex:0 0 560px;
+    width:560px;
     padding:45px;
     border-radius:35px;
     background:var(--glass);
@@ -1234,8 +1234,7 @@ span{
 
 .contact-image{
     flex:0 0 460px;
-    /* width:460px; */
-    max-width:460px;
+    max-width:600px;
     width:100%;
     z-index:1;
     position:relative;
@@ -1244,7 +1243,6 @@ span{
 .crystal{
     position:relative;
     width:100%;
-    max-width:800px;
     right:auto;
     top:auto;
     transform:none;
@@ -1466,25 +1464,6 @@ transform:scale(.95);
 }
 }
 @media(max-width:1200px){
-.services-wrapper{
-    width:900px;
-    height:900px;
-}
-.logo-circle{
-    width:340px;
-    height:340px;
-}
-.contact-form{
-    flex:0 0 540px;
-    width:540px;
-}
-.contact-image{
-    flex-basis:400px;
-}
-}
-
-/* tablets */
-@media(max-width:992px){
 .menu-btn{
     display:flex;
     align-items:center;
@@ -1514,6 +1493,30 @@ transform:scale(.95);
     text-align:center;
     padding:14px 0;
 }
+.services-wrapper{
+    width:900px;
+    height:900px;
+}
+.logo-circle{
+    width:340px;
+    height:340px;
+}
+.contact-section{
+    gap:30px;
+}
+.contact-form{
+    flex:0 0 480px;
+    width:480px;
+    margin-inline-start:20px;
+}
+.contact-image{
+    flex-basis:360px;
+    max-width:360px;
+}
+}
+
+/* tablets */
+@media(max-width:992px){
 .hero .container{
     flex-direction:column-reverse;
     text-align:center;
