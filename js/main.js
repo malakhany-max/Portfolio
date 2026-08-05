@@ -114,6 +114,26 @@ navLinks.querySelectorAll("a").forEach(link => {
         navLinks.classList.remove("open");
     });
 });
+
+const navAnchors = document.querySelectorAll(".nav-links a");
+const spySections = Array.from(navAnchors)
+    .map(a => document.querySelector(a.getAttribute("href")))
+    .filter(Boolean);
+
+function setActiveNav() {
+    const pos = window.scrollY + 150;
+    let currentId = spySections[0].id;
+    spySections.forEach(sec => {
+        if (sec.offsetTop <= pos) {
+            currentId = sec.id;
+        }
+    });
+    navAnchors.forEach(a => {
+        a.classList.toggle("active", a.getAttribute("href") === "#" + currentId);
+    });
+}
+window.addEventListener("scroll", setActiveNav, { passive: true });
+setActiveNav();
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({

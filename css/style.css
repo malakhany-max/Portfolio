@@ -167,6 +167,18 @@ html{
 .nav-links a:hover {
     color: #b57cff;
 }
+.nav-links a.active{
+    color:#8d4cff;
+    text-shadow:
+    0 0 10px rgba(141,76,255,.9),
+    0 0 30px rgba(141,76,255,.5);
+}
+.nav-links a.active:hover{
+    color:#8d4cff;
+    text-shadow:
+    0 0 10px rgba(141,76,255,.9),
+    0 0 30px rgba(141,76,255,.5);
+}
 .contact-btn {
     text-decoration: none;
     color: var(--text);
@@ -1495,6 +1507,7 @@ transform:scale(.95);
 }
 .nav-links.open{
     display:flex;
+    background:var(--bg);
 }
 .nav-links li{
     width:100%;
