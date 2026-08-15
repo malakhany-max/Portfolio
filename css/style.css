@@ -1366,13 +1366,24 @@ body[dir="rtl"]{
     direction:rtl;
 }
 
-body[dir="rtl"] .hero .container,
-body[dir="rtl"] .section-box{
-    flex-direction:row-reverse;
-}
-
 body[dir="rtl"] .nav-links{
     direction:rtl;
+}
+
+/* RTL: reverse the rows only on desktop so mobile/tablet keeps its column layout */
+@media(min-width:993px){
+    body[dir="rtl"] .hero .container,
+    body[dir="rtl"] .section-box{
+        flex-direction:row-reverse;
+    }
+}
+
+body[dir="rtl"] .hero h1{
+    font-family:"Outfit","Segoe UI",Tahoma,sans-serif;
+    font-style:normal;
+    font-size:clamp(30px,8vw,64px);
+    line-height:1.4;
+    overflow-wrap:anywhere;
 }
 
 /* animations */
@@ -1534,12 +1545,48 @@ transform:scale(.95);
 .about-image img{
     transform:none;
 }
+/* radial circle only fits on desktop, switch to a clean grid below */
 .services-wrapper{
-    width:850px;
-    height:850px;
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.services-lines,
+.services-center{
+    display:none;
+}
+.service{
+    position:static;
+    transform:none;
+    width:100%;
+    padding:22px 18px;
+    background:var(--glass);
+    border:1px solid var(--border);
+    border-radius:18px;
+}
+.service::before{
+    display:none;
+}
+.service i{
+    width:56px;
+    height:56px;
+    font-size:24px;
+}
+.service h4{
+    white-space:normal;
+    font-size:16px;
+    margin-top:12px;
+}
+.service:hover{
+    transform:translateY(-6px);
 }
 .skills-wrapper{
     grid-template-columns:1fr;
+}
+.skills-grid{
+    grid-template-columns:repeat(3,1fr);
 }
 .projects-grid{
     grid-template-columns:1fr;
@@ -1585,25 +1632,20 @@ transform:scale(.95);
     font-size:17px;
 }
 .services-wrapper{
-    width:640px;
-    height:640px;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
 }
 .service{
-    width:110px;
+    padding:18px 14px;
 }
 .service i{
-    width:44px;
-    height:44px;
-    font-size:18px;
+    width:50px;
+    height:50px;
+    font-size:20px;
 }
 .service h4{
-    font-size:12px;
-    white-space:normal;
-    line-height:1.2;
-}
-.center-circle{
-    width:200px;
-    height:200px;
+    font-size:15px;
+    margin-top:12px;
 }
 .contact-links{
     grid-template-columns:1fr;
