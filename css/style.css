@@ -1370,10 +1370,10 @@ body[dir="rtl"] .nav-links{
     direction:rtl;
 }
 
-/* RTL: reverse the rows only on desktop (>=1024) so smaller screens keep the same stacked layout as English */
+/* RTL: keep the SAME arrangement as English on desktop — image stays on the same side,
+   only the text flows right-to-left */
 @media(min-width:1024px){
-    body[dir="rtl"] .hero .container,
-    body[dir="rtl"] .section-box{
+    body[dir="rtl"] .hero .container{
         flex-direction:row-reverse;
     }
 }
