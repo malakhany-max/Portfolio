@@ -1370,8 +1370,8 @@ body[dir="rtl"] .nav-links{
     direction:rtl;
 }
 
-/* RTL: reverse the rows only on desktop so mobile/tablet keeps its column layout */
-@media(min-width:993px){
+/* RTL: reverse the rows only on desktop (>=1024) so smaller screens keep the same stacked layout as English */
+@media(min-width:1024px){
     body[dir="rtl"] .hero .container,
     body[dir="rtl"] .section-box{
         flex-direction:row-reverse;
@@ -1519,8 +1519,8 @@ transform:scale(.95);
 }
 }
 
-/* tablets */
-@media(max-width:992px){
+/* tablets / large phones (>=1024 stays desktop) */
+@media(max-width:1023px){
 .hero .container{
     flex-direction:column-reverse;
     text-align:center;
